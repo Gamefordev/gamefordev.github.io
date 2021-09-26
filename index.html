@@ -4,6 +4,7 @@
 
 	  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
     <script src="https://npmcdn.com/moralis@0.0.6/dist/moralis.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.min.js"></script>
   </head>
 
   <body>
@@ -32,6 +33,32 @@
 
       document.getElementById("btn-login").onclick = login;
       document.getElementById("btn-logout").onclick = logOut;
+
+      var config = {
+    type: Phaser.AUTO,
+    width: 800,
+    height: 600,
+    scene: {
+        preload: preload,
+        create: create,
+        update: update
+    }
+};
+
+var game = new Phaser.Game(config);
+
+function preload ()
+{
+}
+
+function create ()
+{
+}
+
+function update ()
+{
+}
+
     </script>
 
 
